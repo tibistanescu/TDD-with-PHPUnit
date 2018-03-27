@@ -36,9 +36,9 @@ The main ideea is that we need a class to test and a test class.
 * the test class has a method called `testMethod` where **Method** is the name of the method under test.
 * we use `assertEquals` method inherited from `TestCase` class, which inherits it from the `Assert` class in phpunit.
 * `assertEquals` parameters:
-** expected value
-** actual value (results from expression)
-** a message that explains the test
+  * expected value
+  * actual value (results from expression)
+  * a message that explains the test
 
 ```php
 namespace TDD;
