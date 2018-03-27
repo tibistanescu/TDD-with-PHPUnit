@@ -81,4 +81,34 @@ Also, we have a `$input` variable.
 The `$output` comes from calling the tested method with the `$input` given.  
 **Assert**  
 Finally, `assertEquals()`.
+
+```php
+namespace TDD\Test;
+
+use PHPUnit\Framework\TestCase;
+use TDD\Math;
+
+class MathTest extends TestCase {
+    public function setUp()
+    {
+        $this->Math = new Math();
+    }
+
+    public function tearDown()
+    {
+        unset($this->Math);
+    }
+
+    public function testAdd()
+    {
+        $input = [0,2,5,8];
+        $output = $this->Math->add($input);
+        $this->assertEquals(
+            15,
+            $output,
+            "When summing the total should equal 15."
+        );
+    }
+}
+```
  
