@@ -5,7 +5,7 @@
 >testing isolated units of code(one single function or method) to ensure that they perform as expected.
 
 ### Test Driven Development definition:
->the iterative methodology used to develop new features, by first writing tests for that particular feature.  
+>the iterative methodology used to develop new features, by first writing tests for that particular feature.    
 **The iteration pattern is:** write test, run & fail test, write code, repeat step 2 and 3 until the test passes.
 
 ### Installation:
