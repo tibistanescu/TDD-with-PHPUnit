@@ -12,7 +12,6 @@ TDD is the iterative methodology used to develop new features, by first writing 
     composer require --dev phpunit/phpunit
 The `--dev` option tells Composer to add packages to `require-dev` in composer.json.
 Also, add autoloading to composer.json for the code to be tested and for the tests.
-    composer.json
 ```
 {
     "require-dev": {
