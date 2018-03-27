@@ -121,7 +121,7 @@ class MathTest extends TestCase {
 ### Adding a second test (for a method that calculates the arithmetic mean)
 In true TDD fashion, first create the test method in the `MathTest` class:
 ```php
-public function testArithmeticMean()
+public function testCalcArithmeticMean()
 {
     $itemsInput = [0,1,3,6];
     $countInput = 4;
