@@ -29,11 +29,12 @@ Also, add autoloading to composer.json for the code to be tested and for the tes
     }
 }
 ```
-### A simple test
+### A simple test (check to see if a method returns a value equal to)
 The main ideea is that we need a class to test and a test class.  
 * the test class is named `ClassTest`, where **Class** is the name of the class under test
-* the test class has to extend `abstract class TestCase`
+* the test class has to extend the abstract class `TestCase` from phpunit.
 * the test class has a method called `testMethod` where **Method** is the name of the method under test.
+* we use `assertEquals` method inherited from `TestCase` class, which inherits it from the `Assert` class in phpunit.
 
 ```php
 namespace TDD;
