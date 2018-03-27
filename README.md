@@ -142,4 +142,5 @@ public function calcArithmeticMean(array $items, int $count)
 ```
 Finally, run the command in the terminal:  
 `phpunit tests/`
- 
+
+### Filtering tests 
