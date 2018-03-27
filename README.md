@@ -31,7 +31,9 @@ Also, add autoloading to composer.json for the code to be tested and for the tes
 ```
 ### A simple test
 The main ideea is that we need a class to test and a test class.  
-The test class is named `ClassTest`, has to extend `abstract class TestCase`, has a method called `testMethod` where Method is the name of the method under test.
+* the test class is named `ClassTest`, where **Class** is the name of the class under test
+* the test class has to extend `abstract class TestCase`
+* the test class has a method called `testMethod` where **Method** is the name of the method under test.
 
 ```php
 namespace TDD;
