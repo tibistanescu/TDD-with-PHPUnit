@@ -68,6 +68,9 @@ class MathTest extends TestCase {
 }
 ```
 
+### Running the test
+In the terminal run the command: `phpunit tests/`
+
 ### "Arrange, Act, Assert" (aka "AAA") is a very simple way to structure tests.
  * arrange all conditions and inputs
  * act on the method under test
