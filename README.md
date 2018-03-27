@@ -29,6 +29,9 @@ Also, add autoloading to composer.json for the code to be tested and for the tes
     }
 }
 ```
+To load the new autoload configuration, run in terminal:
+`composer dump-autoload`
+
 ### A simple test (check if a method returns a value equal to expected)
 The main ideea is that we need a class to test and a test class.  
 * the test class is named `ClassTest`, where **Class** is the name of the class under test
