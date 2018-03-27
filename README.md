@@ -30,10 +30,10 @@ Also, add autoloading to composer.json for the code to be tested and for the tes
 }
 ```
 ### A simple test
-    The class to test: Math.php
 ```
 namespace TDD;
 
+// this is the class we're testing
 class Math {
     public function add(array $items = []) {
         return array_sum($items);
