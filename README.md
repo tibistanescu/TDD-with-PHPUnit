@@ -38,7 +38,7 @@ The main ideea is that we need a class to test and a test class.
 * `assertEquals` parameters:
   * expected value
   * actual value (results from expression)
-  * a message that explains the test
+  * a message that is displayed in case the assertion fails
 
 ```php
 namespace TDD;
