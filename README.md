@@ -72,3 +72,13 @@ class MathTest extends TestCase {
  * arrange all conditions and inputs
  * act on the method under test
  * assert
+ 
+ **Arrange**: the `TestCase` class has 2 methods that we need to implement:  
+ `setUp()` is called before each test.
+ `tearDown()` is called after each test.
+ Also, we have a `$input` variable.
+ **Act**:
+ The `$output` comes from calling the tested method with the `$input` given.
+ **Assert**
+ Finally, `assertEquals`.
+ 
