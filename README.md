@@ -60,8 +60,8 @@ class MathTest extends TestCase {
     public function testAdd() {
         $Math = new Math();
         $this->assertEquals(
-            15,
-            $Math->add([0,2,5,8]),
+            10,
+            $Math->add([0,1,3,6]),
             "When summing the total should equal 15."
         );
     }
@@ -101,12 +101,12 @@ class MathTest extends TestCase {
 
     public function testAdd()
     {
-        $input = [0,2,5,8];
+        $input = [0,1,3,6];
         $output = $this->Math->add($input);
         $this->assertEquals(
-            15,
+            10,
             $output,
-            "When summing the total should equal 15."
+            "When summing the total should equal 10."
         );
     }
 }
