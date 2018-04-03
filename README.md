@@ -77,7 +77,7 @@ class MathTest extends TestCase {
 In the terminal run the command:  
 - run all tests: `phpunit tests/`
 - run all tests in a specific file: `phpunit tests/MathTest.php`
-- run a specific test method: `phpunit tests --filter=testAdd` or `phpunit tests --filter=MathTest::testAdd`
+- run a specific test method: `phpunit tests --filter=testAdd` or `phpunit tests --filter=MathTest::testAdd`  
 Also, an XML config file (phpunit.xml in app root) can be used to better organize tests:
 ```xml
 <phpunit
