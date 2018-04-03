@@ -78,6 +78,26 @@ In the terminal run the command:
 - run all tests: `phpunit tests/`
 - run all tests in a specific file: `phpunit tests/MathTest.php`
 - run a specific test method: `phpunit tests --filter=testAdd` or `phpunit tests --filter=MathTest::testAdd`
+Also, an XML config file (phpunit.xml in app root) can be used to better organize tests:
+```xml
+<phpunit
+    colors="true"
+    >
+    <testsuites>
+        <testsuite name="app">
+            <directory>tests</directory>
+        </testsuite>
+        <testsuite name="math">
+            <directory>tests</directory>
+            <exclude>tests/OtherTest.php</exclude>
+        </testsuite>
+    </testsuites>
+</phpunit>
+```
+Commands:
+- run tests according to the xml file: `phpunit`
+- run test suites: `phpunit --testsuite="math"`
+- run test suites and filter: `phpunit --testsuite="math" --filter="testAdd"`
 
 ### "Arrange, Act, Assert" (aka "AAA") is a very simple way to structure tests.
  * arrange all conditions and inputs
@@ -86,7 +106,7 @@ In the terminal run the command:
  
 **Arrange**: the `TestCase` class has 2 methods that we need to implement:  
 `setUp()` is called before each test.  
-`tearDown()` is called after each test.  
+`tearDown()` is called after each test (if your setUp() just creates plain PHP objects, you can generally ignore tearDown()).
 Also, we have a `$input` variable.  
 **Act**:  
 The `$output` comes from calling the tested method with the `$input` given.  
