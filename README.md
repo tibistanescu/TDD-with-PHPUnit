@@ -74,7 +74,8 @@ class MathTest extends TestCase {
 ```
 
 ### Running the test
-In the terminal run the command: `phpunit tests/`
+In the terminal run the command:  
+`phpunit tests/`
 
 ### "Arrange, Act, Assert" (aka "AAA") is a very simple way to structure tests.
  * arrange all conditions and inputs
@@ -142,7 +143,4 @@ public function calcArithmeticMean(array $items, int $count)
     return array_sum($items)/$count;
 }
 ```
-Finally, run the command in the terminal:  
-`phpunit tests/`
-
-### Filtering tests 
+Finally, run the test.  
