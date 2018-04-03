@@ -75,7 +75,9 @@ class MathTest extends TestCase {
 
 ### Running the test
 In the terminal run the command:  
-`phpunit tests/`
+- run all tests: `phpunit tests/`
+- run all tests in a specific file: `phpunit tests/MathTest.php`
+- run a specific test method: `phpunit tests --filter=testAdd` or `phpunit tests --filter=MathTest::testAdd`
 
 ### "Arrange, Act, Assert" (aka "AAA") is a very simple way to structure tests.
  * arrange all conditions and inputs
